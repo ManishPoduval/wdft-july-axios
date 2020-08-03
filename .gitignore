@@ -1,0 +1,9 @@
+node_modules
+
+package-lock.json
+
+
+# Allowing .env file commits for learning purpose. 
+# In real we must not do this
+
+#.env
