@@ -34,10 +34,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const bb = require('./routes/bb.routes');
 app.use('/', bb);
 
-//Register basic routes
-// Uncomment this when we work on the zomato API
-// const zomato = require('./routes/zomato.routes');
-// app.use('/', zomato);
 
 //Start the server to begin listening on a port
 app.listen(3000, '127.0.0.1', () => {
