@@ -29,10 +29,15 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+const nasaRoutes = require('./routes/nasa.routes')
+app.use('/', nasaRoutes)
+
 //Register basic routes
 // Comment this when we work on the zomato API
 const bb = require('./routes/bb.routes');
 app.use('/', bb);
+
+
 
 
 //Start the server to begin listening on a port
